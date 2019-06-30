@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Produto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="product.Marca" placeholder="Marca"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="product.ano" placeholder="ano"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="product.modelo" placeholder="modelo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="product.combustivel" placeholder="combustivel"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="product.lugares" placeholder="lugares"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="product.cambio" placeholder="cambio"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="product.categoria" placeholder="categoria"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="product.cor" placeholder="cor"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="product.quilometragem" placeholder="quilometragem"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="product.placa" placeholder="placa"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="product.seguradora" placeholder="seguradora"></ion-input>
+    </ion-item>
+
+    <!-- Endereço -->
+
+    <ion-item>
+        <ion-input type="text" [(ngModel)]="product.logradouro" placeholder="logradouro"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-input type="text" [(ngModel)]="product.numero" placeholder="numero"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="text" [(ngModel)]="product.bairro" placeholder="bairro"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-input type="text" [(ngModel)]="product.cidade" placeholder="cidade"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="text" [(ngModel)]="product.estado" placeholder="estado"></ion-input>
+              </ion-item>
+
+          <!-- Endereço -->
+
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="product.picture" placeholder="Foto"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="product.price" placeholder="Preço"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button (click)="saveProduct()" expand="block">
+      Salvar produto
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
